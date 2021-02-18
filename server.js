@@ -16,12 +16,12 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", 
+mongoose.connect(process.env.MONGODB_URI || "https://git.heroku.com/mysterious-forest-26465.git", 
 { 
     useNewUrlParser: true ,
     useFindAndModify: false
 });
-app.use(apiRoutes)
+app.use(apiRoutes);
 
 
 app.listen(PORT, () => {
