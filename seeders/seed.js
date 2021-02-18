@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect("https://git.heroku.com/mysterious-forest-26465.git", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
